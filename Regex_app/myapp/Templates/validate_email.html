@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validator</title>
+</head>
+<body>
+    <h1>Validate Email</h1>
+    <form action="/validate_email" method="post">
+        Email: <input type="text" name="email"><br><br>
+        <input type="submit" value="Validate Email"><br><br>
+    </form>
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+
+    <a href="/" style="display:inline-block; margin-top: 20px; padding: 10px; background-color: red; color: white; text-decoration: none; border-radius: 5px;">Previous: Regex Matcher</a>
+</body>
+</html>
